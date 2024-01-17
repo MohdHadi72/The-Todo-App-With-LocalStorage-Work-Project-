@@ -59,7 +59,6 @@ function remove(index) {
 displayData();
 
 
-
 // For Practice..Only!
 
 // let UserName= [

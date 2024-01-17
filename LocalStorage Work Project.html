@@ -10,59 +10,78 @@
             padding: 0;
             font-family: sans-serif;
         }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(0, 0, 0, 0.946);
+            color: white;
+        }
         form{
             width: 500px;
             margin: auto;
-            box-shadow: 0px 0px 10px 2px #a5a5a5b7;
+            box-shadow: 0px 0px 10px 2px #ccc;
             padding: 10px;
-            border-radius: 10px;
-        }
-        form h1{
-            padding: 20px 0px;
-            text-align: center;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 12px;
+            margin-top: 10px;
+            
         }
         form label{
-           display: block;
-           font-size: 17px;
-          
-           font-weight: bold;
-           font-family: cursive;
+            display: block;
+            font-size: 19px;
+
+        }
+        form h1{
+            padding: 20px 4px;
+            text-align: center;
+            font-size: 2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
         form input{
             width: 100%;
-            margin-top: 9px;
-            height: 30px;
-            margin-bottom: 13px;
-
-        }
-        button{
-            padding: 10px;
-            background-color: aqua;
-            color: black;
-            font-weight: bold;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            cursor: pointer;
-            margin-left: 40%;
-            /* margin: 9px ; */
             margin-top: 2%;
+            padding: 10px;
+            margin-bottom: 2%;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        input::placeholder{
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        button{
+            padding: 13px;
+            margin-left: 40%;
+            background-color: aqua;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 4%;
+
 
         }
+
         #main{
             width: 1320px;
             display: flex;
             flex-wrap: wrap;
             margin: auto;
             border-radius: 10px;
+            margin-top: 2%;
         }
         .items{
             flex-basis: 23%;
             margin: 1%;
             box-shadow: 0px 0px 10px 2px #cccc;
-            padding: 2%;
+            padding: 19px;
             position: relative;
+            border-radius: 13px;
         }
         .items h4{
             margin-top: 12px;
@@ -76,7 +95,7 @@
             box-shadow: 0px 0px 10px 2px #cccc;
             border-radius: 50%;
             padding: 8px 10px;      
-            height: 27px;
+            height: 40px;
             margin-top: 2%;
 
 
