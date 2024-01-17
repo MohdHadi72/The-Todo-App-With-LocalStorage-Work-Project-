@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App With Local Storage Item Save And Remove</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        form{
+            width: 500px;
+            margin: auto;
+            box-shadow: 0px 0px 10px 2px #a5a5a5b7;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        form h1{
+            padding: 20px 0px;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        form label{
+           display: block;
+           font-size: 17px;
+          
+           font-weight: bold;
+           font-family: cursive;
+        }
+        form input{
+            width: 100%;
+            margin-top: 9px;
+            height: 30px;
+            margin-bottom: 13px;
+
+        }
+        button{
+            padding: 10px;
+            background-color: aqua;
+            color: black;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            margin-left: 40%;
+            /* margin: 9px ; */
+            margin-top: 2%;
+
+        }
+        #main{
+            width: 1320px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .items{
+            flex-basis: 23%;
+            margin: 1%;
+            box-shadow: 0px 0px 10px 2px #cccc;
+            padding: 2%;
+            position: relative;
+        }
+        .items h4{
+            margin-top: 12px;
+        }
+        .items span{
+            position: absolute;
+            font-size: 30px;
+            right: 9px;
+            top: 0px;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px 2px #cccc;
+            border-radius: 50%;
+            padding: 8px 10px;      
+            height: 27px;
+            margin-top: 2%;
+
+
+        }
+        .items span:hover{
+            background-color: red;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Save Data Now</h1>
+        <label for="">Enter Name</label>
+        <input type="text" name="UserName" placeholder="Enter Name" required>
+        <label for="">Enter Email</label>
+        <input type="email" name="Email" placeholder="Enter Email Address" required >
+        <label for="">Mobile Number</label>
+        <input type="Number" name="number" placeholder="Enter Mobile Number" required>
+        <button>Save Data</button>
+    </form>
+    
+    <div id="main">
+        
+    </div>
+
+
+
+
+    <script src="./LocalStorage Work Project.js"></script>
+</body>
+</html>
